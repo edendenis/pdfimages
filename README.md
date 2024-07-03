@@ -42,7 +42,7 @@ Para configurar/instalar/usar o `pdfimages` no `Linux Ubuntu`, você pode seguir
 
 Para instalar o pdfimages no Linux Ubuntu, você precisa instalar o pacote poppler-utils, que inclui o pdfimages junto com outras ferramentas úteis para trabalhar com arquivos `.pdf`. Você pode fazer isso usando o gerenciador de pacotes apt do Ubuntu. Siga estes passos:
 
-3. **Instale o pacote `poppler-utils` executando:** `sudo apt install poppler-utils`
+3. **Instale o pacote `poppler-utils` executando:** `sudo apt install poppler-utils -y`
 
 Após a instalação, você poderá usar o comando pdfimages diretamente no terminal.
 
@@ -59,7 +59,7 @@ Para configurar/instalar/usar o `gImageReader` no `Linux Ubuntu` sem precisar di
 2. Digite o seguinte comando e pressione `Enter`:
 
     ```
-    sudo apt clean                                                            
+    sudo apt clean
     sudo apt autoclean
     sudo apt autoremove -y
     sudo apt update
@@ -67,7 +67,7 @@ Para configurar/instalar/usar o `gImageReader` no `Linux Ubuntu` sem precisar di
     sudo apt clean
     sudo apt list --upgradable
     sudo apt full-upgrade -y
-    sudo apt install poppler-utils
+    sudo apt install poppler-utils -y
     ```
     
 
@@ -75,7 +75,7 @@ Para configurar/instalar/usar o `gImageReader` no `Linux Ubuntu` sem precisar di
 
 ### 2.1 Extrair imagens de um arquivo `.pdf`
 
-1. Depois de instalar o pdfimages, você pode extrair imagens de um arquivo `.pdf` com um comando como: `pdfimages -all seu_arquivo.pdf pasta_destino/`
+1. Depois de instalar o `pdfimages`, você pode extrair imagens de um arquivo `.pdf` com um comando como: `pdfimages -all seu_arquivo.pdf pasta_destino/`
 
   Substitua `seu_arquivo.pdf` pelo nome do arquivo `.pdf` do qual você deseja extrair as imagens e pasta_destino pelo nome da pasta onde você deseja que as imagens sejam salvas. Se a pasta não existir, o `pdfimages` a criará.
 
